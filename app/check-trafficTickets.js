@@ -9,30 +9,28 @@ function byPlate(vehicle) {
 }
 
 function getTicketDiscount(value) {
-    return value * (1 - 0.1)
+    return (value * 0.9) 
 }
 
 const ticket = tickets.find(byPlate)
 
-if (ticket) {
-    console.log('VehiclePlate: ' + ticket.vehiclePlate)
-    console.log('Violation: ' + ticket.violation)
-    console.log('Points: ' + ticket.points)
-    console.log('Value: ' + ticket.value)
-    console.log("Valu with discount: " + getTicketDiscount(ticket.value).toFixed(2))
-}
-else {
-    console.log('Ticket not found!')
-}
-
-// module.exports = {
-//     getStudentStatus(id) {
-//         let student = vehicles.find(student => student.id == id)
-//         if(student) {
-//             const average = getAverage(student.grades)
-//             student.average = average
-//             student.status = getStatus(average)
-//         }
-//         return student
-//     }
+// if (ticket) {
+//     console.log('VehiclePlate: ' + ticket.vehiclePlate)
+//     console.log('Violation: ' + ticket.violation)
+//     console.log('Points: ' + ticket.points)
+//     console.log('Value: ' + ticket.value)
+//     console.log("Valu with discount: " + getTicketDiscount(ticket.value).toFixed(2))
 // }
+// else {
+//     console.log('Ticket not found!')
+// }
+
+module.exports = {
+    getTicketStatus(vehiclePlate) {
+        let ticket = tickets.find(ticket => ticket.vehiclePlate == vehiclePlate)
+        if(ticket) {
+            ticket.updateValue = getTicketDiscount(ticket.value).toFixed(2)
+        }
+        return ticket
+    }
+}
