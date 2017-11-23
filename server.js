@@ -13,7 +13,7 @@ app.set('view engine', 'ejs')
 
 app.get('/', (request, response) => {
     const data = {
-        placa:null, 
+        placa:null,
         submitted:false }
     response.render('index', data)
 })

@@ -21,13 +21,17 @@
 
  <% if(placa) { %>
     <section>
-        <h2 id="vehiclePlate"><%=placa.vehicleplate%></h2>
+        <h2 id="vehiclePlate"><%=placa.vehiclePlate%></h2>
         <p>Inflação: <span id="violation"><%=placa.violation%></span></p>
         <p>Pontos: <span id="points"><%=placa.points%></span></p>
         <p>Valor: R$ <span id="value"><%=placa.value%></span></p>
-        <p>Valor c/ desconto: R$ <span id="discountValue"><%=placa.discont%></span></p>
+        <p>Valor c/ desconto: R$ <span id="discountValue"><%=placa.value*0.9%></span></p>
     </section>
-    <% } else if(submitted) { %>
+
+    <% } else if(submitted){ %>
+        <h2>Veículo Não Encontrado</h2>
+
+    <% } else { %>
     <section>
         <h2 id="vehiclePlate">HJT-6924</h2>
         <p>Inflação: <span id="violation">DIRIGIR VEICULO SEM POSSUIR CNH OU PERMISSAO PARA DIRIGIR</span></p>

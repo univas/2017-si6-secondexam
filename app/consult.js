@@ -8,8 +8,6 @@ module.exports = {
             violation = placa.violation
             points = placa.points
             value = placa.value
-            discont = placa.value/10*9
-            console.log(value)
         }
         return status
     }
