@@ -1,0 +1,182 @@
+[
+  {
+    "vehiclePlate": "HJT-0001",
+    "violation": "DIRIGIR VEICULO SEM POSSUIR CNH OU PERMISSAO PARA DIRIGIR",
+    "points": 7,
+    "value": 880.41
+  },
+  {
+    "vehiclePlate": "HJT-0002",
+    "violation": "DIRIGIR VEICULO COM CNH CASSADA",
+    "points": 7,
+    "value": 1467.35
+  },
+  {
+    "vehiclePlate": "HJT-0003",
+    "violation": "DIRIGIR VEICULO COM PERMISSAO PARA DIRIGIR CASSADA",
+    "points": 7,
+    "value": 1467.35
+  },
+  {
+    "vehiclePlate": "HJT-0004",
+    "violation": "DIRIGIR VEICULO COM CNH OU PPD COM SUSPENSAO DO DIREITO DE DIRIGIR",
+    "points": 7,
+    "value": 1467.35
+  },
+  {
+    "vehiclePlate": "HJT-0005",
+    "violation": "DIRIGIR VEICULO COM CNH DE CATEGORIA DIFERENTE DA DO VEICULO",
+    "points": 7,
+    "value": 880.41
+  },
+  {
+    "vehiclePlate": "HJT-0006",
+    "violation": "DIRIGIR VEICULO COM PPD DE CATEGORIA DIFERENTE DA DO VEICULO",
+    "points": 7,
+    "value": 880.41
+  },
+  {
+    "vehiclePlate": "HJT-0007",
+    "violation": "DIRIGIR VEICULO COM VALIDADE DA CNH OU PPD VENCIDA HA MAIS DE 30 DIAS",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0008",
+    "violation": "DIRIGIR VEICULO SEM USAR LENTES CORRETORAS DE VISAO",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0009",
+    "violation": "DIRIGIR VEICULO SEM USAR APARELHO AUXILIAR DE AUDICAO",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0010",
+    "violation": "DIRIGIR VEICULO SEM USAR APARELHO AUXILIAR DE PROTESE FISICA",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0011",
+    "violation": "DIRIGIR VEICULO S/ ADAPTACOES IMPOSTAS NA CONCESSAO/RENOVACAO LICENCA CONDUZIR",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0012",
+    "violation": "ENTREGAR VEICULO A PESSOA SEM CNH OU PERMISSAO PARA DIRIGIR",
+    "points": 7,
+    "value": 880.41
+  },
+  {
+    "vehiclePlate": "HJT-0013",
+    "violation": "ENTREGAR VEICULO A PESSOA COM CNH CASSADA",
+    "points": 7,
+    "value": 1467.35
+  },
+  {
+    "vehiclePlate": "HJT-0014",
+    "violation": "ENTREGAR VEICULO A PESSOA COM PERMISSAO PARA DIRIGIR CASSADA",
+    "points": 7,
+    "value": 1467.35
+  },
+  {
+    "vehiclePlate": "HJT-0015",
+    "violation": "ENTREGAR VEICULO A PESSOA COM CNH OU PPD COM SUSPENSAO DO DIREITO DE DIRIGIR",
+    "points": 7,
+    "value": 1467.35
+  },
+  {
+    "vehiclePlate": "HJT-0016",
+    "violation": "ENTREGAR VEICULO A PESSOA COM CNH DE CATEGORIA DIFERENTE DA DO VEICULO",
+    "points": 7,
+    "value": 880.41
+  },
+  {
+    "vehiclePlate": "HJT-0017",
+    "violation": "ENTREGAR VEICULO A PESSOA COM PPD DE CATEGORIA DIFERENTE DA DO VEICULO",
+    "points": 7,
+    "value": 880.41
+  },
+  {
+    "vehiclePlate": "HJT-0018",
+    "violation": "ENTREGAR VEICULO A PESSOA COM CNH VENCIDA HA MAIS DE 30 DIAS",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0019",
+    "violation": "ENTREGAR O VEICULO A PESSOA SEM USAR LENTES CORRETORAS DE VISAO",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0020",
+    "violation": "ENTREGAR O VEICULO A PESSOA SEM USAR APARELHO AUXILIAR DE AUDICAO",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0021",
+    "violation": "ENTREGAR O VEICULO A PESSOA SEM APARELHO DE PROTESE FISICA",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0022",
+    "violation": "ENTREGAR VEIC PESSOA S/ ADAPTACOES IMPOSTAS CONCESSAO/RENOVACAO LICENCA CONDUZIR",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0023",
+    "violation": "PERMITIR POSSE/CONDUCAO DO VEICULO A PESSOA SEM CNH OU PPD",
+    "points": 7,
+    "value": 880.41
+  },
+  {
+    "vehiclePlate": "HJT-0024",
+    "violation": "PERMITIR POSSE/CONDUCAO DO VEICULO A PESSOA COM CNH CASSADA",
+    "points": 7,
+    "value": 1467.35
+  },
+  {
+    "vehiclePlate": "HJT-0025",
+    "violation": "DEIXAR O PASSAGEIRO DE USAR O CINTO SEGURANCA",
+    "points": 5,
+    "value": 195.23
+  },
+  {
+    "vehiclePlate": "HJT-0026",
+    "violation": "TRANSPORTAR CRIANCA SEM OBSERVANCIA DAS NORMAS DE SEGURANCA ESTABELECIDAS P/ CTB",
+    "points": 7,
+    "value": 293.47
+  },
+  {
+    "vehiclePlate": "HJT-0027",
+    "violation": "DIRIGIR SEM ATENCAO OU SEM OS CUIDADOS INDISPENSAVEIS A SEGURANCA",
+    "points": 3,
+    "value": 88.38
+  },
+  {
+    "vehiclePlate": "HJT-0028",
+    "violation": "UTILIZAR-SE DE VEICULO PARA DEMONSTRAR OU EXIBIR MANOBRA PERIGOSA",
+    "points": 7,
+    "value": 2934.70
+  },
+  {
+    "vehiclePlate": "HJT-0029",
+    "violation": "UTILIZAR-SE DE VEICULO PARA DEMONSTRAR OU EXIBIR ARRANCADA BRUSCA",
+    "points": 7,
+    "value": 2934.70
+  },
+  {
+    "vehiclePlate": "HJT-0030",
+    "violation": "UTILIZAR-SE DE VEICULO PARA DEMONSTRAR OU EXIBIR DERRAPAGEM OU FRENAGEM",
+    "points": 7,
+    "value": 2934.70
+  }
+]
