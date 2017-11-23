@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multas de Trânsito</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<aside>
+    <h1>Multas de Trânsito</h1>
+
+    <form action="/multasDeTransito" method="get">
+        <div>
+            <label for="vehiclePlate">Placa do Veículo:</label>
+            <input type="text" id="vehiclePlate" name="placa" required pattern="\w{3}-\d{4}" placeholder="AAA-9999">
+        </div>
+        <input type="submit" value="Consultar">
+    </form>
+
+    <% if(suaMulta) { %>
+        <section>
+            <h2 id="vehiclePlate"><%= suaMulta.vehiclePlate %></h2>
+            <p>Inflação: <span id="violation"><%= suaMulta.violation %></span></p>
+            <p>Pontos: <span id="points"><%= suaMulta.points %></span></p>
+            <p>Valor: <span id="value"><%= suaMulta.value %></span></p>
+            <p>Valor c/ desconto: <span id="discountValue"><%= suaMulta.desconto %></span></p>
+        </section>
+    <% } else if(suaMulta == false) { %>
+        <p>Sua placa não foi encontrada</p>
+    <% } %> 
+    
+</aside>
+
+</body>
+</html>
