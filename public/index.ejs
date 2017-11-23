@@ -22,10 +22,10 @@
  <%if(plate){%>
     <section>
         <h2 id="vehiclePlate"><%=plate.vehicleplate%></h2>
-        <p>Inflação: <span id="violation"><%=plate.violation%></p>
-        <p>Pontos: <span id="points"><%=plate.points%></p>
-        <p>Valor: R$ <span id="value"><%=plate.value%></p>
-        <p>Valor c/ desconto: R$ <span id="discountValue"><%=plate.value/10*9%></p>
+        <p>Inflação: <span id="violation"><%=plate.violation%></span></p>
+        <p>Pontos: <span id="points"><%=plate.points%></span></p>
+        <p>Valor: R$ <span id="value"><%=plate.value%></span></p>
+        <p>Valor c/ desconto: R$ <span id="discountValue"><%=plate.value/10*9%></span></p>
     </section>
 
     <%}else if(submitted){%>
