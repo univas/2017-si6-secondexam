@@ -18,11 +18,11 @@ app.get('/', (request, response) => {
 })
 
 app.get('/status', (request, response) => {
-    const { getTicketStatus } = require('./app/check-trafficTickets.json')
+    const { getTicketStatus } = require('./app/check-trafficTickets.js')
     ticketStatus = getTicketStatus(request.query.vehiclePlate)
 
     const data = {
-        student: ticketStatus,
+        ticket: ticketStatus,
         submitted: true
     }
     response.render('index', data)
