@@ -18,14 +18,17 @@
         </div>
         <input type="submit" value="Consultar">
     </form>
-
+    <%
     <section>
+        <%{
         <h2 id="vehiclePlate">HJT-6924</h2>
-        <p>Inflação: <%= veiculo.vehiclePlate %></p>
-        <p>Pontos: <span id="points">7</span></p>
-        <p>Valor: R$ <span id="value">880.41</span></p>
-        <p>Valor c/ desconto: R$ <span id="discountValue">793.32</span></p>
+        <p>Inflação: <span id="violation"><%=vehiclePlate.violation%></span></p>
+        <p>Pontos: <span id="points"><%=vehiclePlate.points%></span></p>
+        <p>Valor: R$ <span id="value"><%=vehiclePlate.value%></span></p>
+        <p>Valor c/ desconto: R$ <span id="discountValue"><%=placa.value*0.9%></span></p>
+        }%>
     </section>
+    %>
 </aside>
 
 </body>

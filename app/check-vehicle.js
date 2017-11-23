@@ -5,7 +5,7 @@ function getVehiclePlaca(){
 }
 
 function Placa(vehicle){
-    return vehicle.plate == getVehiclePlaca()
+    return vehicle.vehiclePlate == getVehiclePlaca()
 }
 
 function getValor(value) {
