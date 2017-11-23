@@ -14,17 +14,6 @@ function getTicketDiscount(value) {
 
 const ticket = tickets.find(byPlate)
 
-// if (ticket) {
-//     console.log('VehiclePlate: ' + ticket.vehiclePlate)
-//     console.log('Violation: ' + ticket.violation)
-//     console.log('Points: ' + ticket.points)
-//     console.log('Value: ' + ticket.value)
-//     console.log("Valu with discount: " + getTicketDiscount(ticket.value).toFixed(2))
-// }
-// else {
-//     console.log('Ticket not found!')
-// }
-
 module.exports = {
     getTicketStatus(vehiclePlate) {
         let ticket = tickets.find(ticket => ticket.vehiclePlate == vehiclePlate)
