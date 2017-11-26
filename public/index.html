@@ -1,32 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Multas de Trânsito</title>
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<aside>
-    <h1>Multas de Trânsito</h1>
-
-    <form action="" method="POST">
-        <div>
-            <label for="vehiclePlate">Placa do Veículo:</label>
-            <input type="text" id="vehiclePlate" required pattern="\w{3}-\d{4}" placeholder="AAA-9999">
-        </div>
-        <input type="submit" value="Consultar">
++<!DOCTYPE html>
+ +<html lang="en">
+ +<head>
+     <meta charset="UTF-8">
+     <title>Multas de Trânsito</title>
+ 
+     <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+ <aside>
+     <h1>Multas de Trânsito</h1>
+    <form action="/veiculos" method="get">
+         <div>
+             <label for="vehiclePlate">Placa do Veículo:</label>
+             <input type="text" id="vehiclePlate" name="placa" required pattern="\w{3}-\d{4}" placeholder="AAA-9999">
+         </div>
+         <input type="submit" value="Consultar">
     </form>
-
-    <section>
-        <h2 id="vehiclePlate">HJT-6924</h2>
-        <p>Inflação: <span id="violation">DIRIGIR VEICULO SEM POSSUIR CNH OU PERMISSAO PARA DIRIGIR</span></p>
-        <p>Pontos: <span id="points">7</span></p>
-        <p>Valor: R$ <span id="value">880.41</span></p>
-        <p>Valor c/ desconto: R$ <span id="discountValue">793.32</span></p>
-    </section>
-</aside>
-
-</body>
-</html>
+     <% if(veiculo) { %>
+         <section>
+            <h2 id="vehiclePlate"><%= veiculo.placaVeiculo %></h2>
+             <p>Inflação: <span id="violation"><%= veiculo.violacao %></span></p>
+             <p>Pontos: <span id="points"><%= veiculo.pontos %></span></p>
+             <p>Valor: <span id="value"><%= veiculo.valor %></span></p>
+            <p>Valor c/ desconto: <span id="discountValue"><%= veiculo.comDesconto %></span></p>
+         </section>
+     <% } else if(veiculo == false) { %>
+         <p>Placa não encontrada</p>
+     <% } %> 
+ </aside>
+ 
+ </body>
+ </html> 
