@@ -10,5 +10,17 @@
     "body-parser": "^1.18.2",
     "ejs": "^2.5.7",
     "express": "^4.16.2"
-  }
+  },
+  "description": "2017 SI6 Second Node.js exam",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcristiane/2017-si6-secondexam.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fcristiane/2017-si6-secondexam/issues"
+  },
+  "homepage": "https://github.com/fcristiane/2017-si6-secondexam#readme"
 }
