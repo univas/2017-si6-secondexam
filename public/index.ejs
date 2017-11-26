@@ -11,21 +11,33 @@
 <aside>
     <h1>Multas de Trânsito</h1>
 
-    <form action="" method="POST">
+    <form action="/calculate" method="GET">
         <div>
             <label for="vehiclePlate">Placa do Veículo:</label>
-            <input type="text" id="vehiclePlate" required pattern="\w{3}-\d{4}" placeholder="AAA-9999">
+            <input type="text" name="plate" required pattern="\w{3}-\d{4}" placeholder="AAA-9999">
         </div>
         <input type="submit" value="Consultar">
     </form>
 
     <section>
+    <% if(vehicle) { %>
+        <h2 id="vehiclePlate"><%= vehicle.vehiclePlate %></h2>
+        <p>Inflação: <span id="violation"><%= vehicle.violation %></span></p>
+        <p>Pontos: <span id="points"><%= vehicle.points %></span></p>
+        <p>Valor: R$ <span id="value"><%= vehicle.value %></span></p>
+        <p>Valor c/ desconto: R$ <span id="discountValue"><%= vehicle.discountValue %></span></p>
+    
+    <% } else { %>
+        
         <h2 id="vehiclePlate">HJT-6924</h2>
         <p>Inflação: <span id="violation">DIRIGIR VEICULO SEM POSSUIR CNH OU PERMISSAO PARA DIRIGIR</span></p>
         <p>Pontos: <span id="points">7</span></p>
         <p>Valor: R$ <span id="value">880.41</span></p>
         <p>Valor c/ desconto: R$ <span id="discountValue">793.32</span></p>
+
+    <% } %>
     </section>
+
 </aside>
 
 </body>
