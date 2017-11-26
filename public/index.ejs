@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Multas de Trânsito</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<aside>
+    <h1>Multas de Trânsito</h1>
+
+    <form action="/status" method="GET">
+        <div>
+            <label for="vehiclePlate">Placa do Veículo:</label>
+            <input type="text" name="vehiclePlate" required pattern="\w{3}-\d{4}" placeholder="AAA-9999">
+        </div>
+        <input type="submit" value="Consultar">
+    </form>
+
+    <section>
+    <% if(ticket) { %>
+        <h2 id="vehiclePlate"><%= ticket.vehiclePlate %></h2>
+        <p>Inflação: <span id="violation"><%= ticket.violation %></span></p>
+        <p>Pontos: <span id="points"><%= ticket.points %></span></p>
+        <p>Valor: R$ <span id="value"><%= ticket.value %></span></p>
+        <p>Valor c/ desconto: R$ <span id="discountValue"><%= ticket.updateValue %></span></p>
+    <% } else if(submitted) { %>
+        <p>Ticket not found!</p>
+    <% } %>
+    </section>
+</aside>
+
+</body>
+</html>
